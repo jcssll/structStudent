@@ -20,7 +20,26 @@ void printData(Student s);
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	Student s1; // Declared variable s1 of Student type
+	inputData(s1);
+
+	cout << "sId" << " " << "Name" << " " << "Major" << endl;
+	printData(s1);
+
+	Student s2, s3, s4;
+	s2 = studentFn(222, "Bob", "English"); 
+	printData(s2);
+
+	s3 = studentFn(333,"Mike", "Math" );
+	printData(s3);
+
+	s4 = studentFn(444, "Janet", "Computer Science"); 
+	printData(s4);
+
+	cin.clear(); 
+	cin.ignore();
+	cin.get();
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
