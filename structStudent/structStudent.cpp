@@ -3,6 +3,20 @@
 
 #include "pch.h"
 #include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std; 
+
+struct Student
+{
+	int id; 
+	string name; 
+	string major; 
+};
+
+void inputData(Student& s); 
+Student studentFn(int sId, string sName, string sMajor);
+void printData(Student s);
 
 int main()
 {
