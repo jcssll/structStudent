@@ -42,6 +42,33 @@ int main()
 	return 0;
 }
 
+void inputData(Student& s)
+{
+	cout << "Enter id: "; 
+	cin >> s.id; 
+
+	cout << "Enter name: "; 
+	cin >> s.name; 
+
+	cout << "Enter major: "; 
+	cin >> s.major; 
+	cout << endl; 
+
+}
+
+Student studentFn(int sId, string sName, string sMajor)
+{
+	Student temp; 
+	temp.id = sId; 
+	temp.name = sName; 
+	temp.major = sMajor; 
+	return temp; 
+}
+void printData(Student s)
+{
+	cout << s.id << " " << s.name << " " << s.major << endl;
+
+}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
